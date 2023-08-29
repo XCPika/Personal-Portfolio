@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "command": "npm start",
+            "name": "NPM Start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Debug",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src",
+            "sourceMapPathOverrides": {
+                "webpack:///src/*": "${webRoot}/*"
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Development Env",
+            "configurations": ["NPM Start", "Debug"]
+        }
+    ]
+  }
