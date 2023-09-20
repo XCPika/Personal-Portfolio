@@ -1,0 +1,31 @@
+:root {
+  --primary-bg: rgb(20, 20, 20);
+  --secondary-bg: rgb(10, 10, 10);
+  --tertiary-bg: rgb(25, 25, 25);
+  --accent-color: rgb(79, 247, 182);
+
+  --slide-in-speed: 600ms;
+  --slide-in-delay: 200ms;
+  --general-delay: 500ms;
+  --cubic-1: cubic-bezier(0.175, 0.885, 0.32, 1);
+  --cubic-2: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+}
+
+#root {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--accent-color);
+  background-color:var(--primary-bg);
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}

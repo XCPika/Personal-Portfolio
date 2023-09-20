@@ -1,21 +1,16 @@
-p {
-    width: 80%;
-    padding: 5svh 0 0 5svh;
-}
+#home {
+    p {
+        padding: 5svh 5svh 0 5svh;
+        margin: 0;
+    }
 
-#main_slide {
-    transform: translateX(-120%);
-}
-
-.slide-in {
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
-}
-
-@keyframes slide-in {
-    100% { transform: translateX(0%); }
-}
-
-@-webkit-keyframes slide-in {
-    100% { -webkit-transform: translateX(0%); }
+    img {
+        margin: 50px;
+        outline: 2px solid gray;
+        outline-offset: 4px;
+        border-radius: 15px;
+        // border-bottom: clamp(3px, 0.5svh, 6px) solid var(--accent-color);
+        transition: var(--general-delay) ease-in-out;
+    }
+     
 }
