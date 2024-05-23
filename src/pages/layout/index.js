@@ -39,3 +39,18 @@ export default function Layout() {
         </>
     )
 }
+
+
+
+export default function Layout() {
+
+    return (
+        <div>
+            <header>
+                <h1>Hello World!</h1>
+            </header>
+            <Outlet/>
+        </div>
+    )
+
+}
